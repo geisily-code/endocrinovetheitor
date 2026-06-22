@@ -82,12 +82,13 @@ a  { text-decoration: none; }
 .section-chip.light.section-chip--link,
 .contact .section-chip.light.section-chip--link {
   background: var(--pale);
-  color: var(--navy);
+  color: var(--navy2);
   border-color: rgba(14,39,79,.14);
 }
 .section-chip.light.section-chip--link:hover,
 .contact .section-chip.light.section-chip--link:hover {
   background: #e8edf5;
+  color: var(--navy2);
   transform: translateY(-3px);
   box-shadow: 0 0 30px rgba(217,224,240,.55);
 }
@@ -231,7 +232,7 @@ h2.light { color: var(--white); }
   background: linear-gradient(140deg, #0a1e3d 0%, var(--navy2) 100%);
   display: flex;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 40px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -1047,14 +1048,27 @@ h2.light { color: var(--white); }
 .testi-author span   { font-size: .72rem; color: var(--body-c); }
  
 .testi-source {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  font-size: .8rem;
-  color: var(--body-c);
+  gap: 10px;
+  font-size: .9rem;
+  color: var(--navy);
+  background: rgba(247,213,21,.14);
+  border: 1px solid rgba(247,213,21,.35);
+  padding: 12px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+  text-decoration: none;
 }
 .testi-source strong { color: var(--navy); }
+
+.testi-source:hover {
+  background: rgba(247,213,21,.22);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px rgba(247,213,21,.18);
+}
  
 /* =====================
    CITYBAR
@@ -1113,7 +1127,7 @@ h2.light { color: var(--white); }
    RODAPÉ
    ===================== */
 .footer {
-  background: linear-gradient(180deg, #0b2a57 0%, #0e3c7a 48%, #3f6ea8 100%);
+  background: linear-gradient(180deg, var(--navy) 0%, var(--navy2) 100%);
   color: #edf2ff;
   font-size: .87rem;
 }
@@ -1219,7 +1233,7 @@ h2.light { color: var(--white); }
   /* Herói mobile: foto em cima, texto embaixo */
   .hero {
     min-height: 100svh;
-    padding-top: 0;
+    padding-top: 80px;
     align-items: flex-start;
   }
   .hero-inner {
