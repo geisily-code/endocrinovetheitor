@@ -516,6 +516,7 @@ h2.light { color: var(--white); }
 .services {
   background: #0e274f;
   padding: 100px 0 0;
+  margin-top: -2px; /* remove small white seam between hero and services */
   position: relative;
   overflow: hidden;
 }
