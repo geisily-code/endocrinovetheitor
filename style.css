@@ -519,7 +519,7 @@ h2.light { color: var(--white); }
   position: relative;
   overflow: hidden;
 }
-.services h2 { margin-top: 10px; }
+.services h2 { margin-top: 10px; text-align: center; }
  
 .services-grid {
   display: grid;
