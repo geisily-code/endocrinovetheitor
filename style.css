@@ -468,8 +468,9 @@ h2.light { color: var(--white); }
 .about-content p { color: #3a4a66; font-size: 1.05rem; line-height: 1.85; margin-top: 18px; margin-bottom: 36px; }
  
 .about-stats { display: flex; justify-content: flex-start; gap: 32px; margin-bottom: 40px; }
-.stat { display: flex; flex-direction: column; align-items: center; gap: 6px; }
-.stat-n { font-size: 2.4rem; }
+.stat { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.stat-icon { font-size: 2.4rem; line-height: 1; }
+.stat-n { font-size: 1.7rem; font-weight: 900; color: var(--navy); }
 .stat-l { font-size: .78rem; font-weight: 800; color: var(--navy2); text-transform: uppercase; letter-spacing: .08em; }
  
 .btn-primary-dark {
@@ -1248,11 +1249,12 @@ h2.light { color: var(--white); }
   .about-mobile-card {
     display: block;
     position: relative;
-    width: 320px;
+    width: min(100%, 360px);
+    max-width: 360px;
     height: 420px;
     margin: 12px auto 48px;
     border-radius: 18px;
-    overflow: visible;
+    overflow: hidden;
     box-shadow: 0 12px 30px rgba(14,39,79,.12);
   }
   .about-mobile-card img { display: block; width: 100%; height: 100%; object-fit: cover; }
